@@ -8,87 +8,137 @@
 <body>
     
     <header>
-        <h1>¡La Buena Mesa!</h1>
-        <p>Comida casera, sabor real.</p>
-
-        <nav>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#reserva">Reservas</a></li>
-                <li><a href="ubicacion.html">¿Como llegar?</a></li>
-            </ul>
-        </nav>
+        <table border="1" width="100%">
+            <tr>
+                <th width="30%">
+                    <h1>¡La Buena Mesa!</h1>
+                    <p>Comida casera, sabor real.</p>
+                </th>
+                <th width="70%" align="right">
+                    <nav aria-label="Botonera para viajar entre secciones.">
+                        [&nbsp;&nbsp;&nbsp; | <a href="#menu" aria-label="Ir al menu">Menu</a> | &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp; | <a href="#nosotros" aria-label="Información de nosotros">Nosotros</a> | &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp; | <a href="#reserva" aria-label="Realiza tu reserva">Reservas</a> | &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp; | <a href="ubicacion.html" aria-label="Ubicación del restaurante">¿Como llegar?</a> | &nbsp;&nbsp;&nbsp;]
+                    </nav>
+                </th>
+            </tr>
+        </table>
     </header>
-
+    <hr>
     <main>
         <!-- sección menu -->
-         <section id="menu">
-
-            <h2>Menu del día:</h2>
+        <section id="menu">
             <article>
-                <h3>Milanesa con papas:</h3>
-                <p>Clasica milanesa de carne, servida con papas fritas.</p>
+                <table border="1" width="100%">
+                    <thead>
+                    <tr>
+                        <td colspan="3"><h2>Menu del día:</h2></td>
+                    </tr>
+                        <th>Nombre del plato</th>
+                        <th>Descripción e ingredientes</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><h3>Milanesa con papas:</h3></td>
+                            <td><p>Clasica milanesa de carne, servida con papas fritas.</p></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Ravioles al disco:</h3></td>
+                            <td><p>Ravioles de ricota y verdura, con salsa casera y queso rallado.</p></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Ensalada cesar:</h3></td>
+                            <td><p>Lechuga, crutones, pollo grillado y aderezo cesar</p></td>
+                        </tr>
+                    </tbody>
+                </table>
             </article>
+        </section>
+        <hr>
 
-            <article>
-                <h3>Ravioles al disco:</h3>
-                <p>Ravioles de ricota y verdura, con salsa casera y queso rallado.</p>
-            </article>
+        <!-- sección nosotros -->
+        <aside id="nosotros">
+            <table border="1" width="100%">
+                <tr>
+                    <th>
+                        <h2>Sobre nosotros:</h2>
+                    </th>
+                </tr>
 
-            <article>
-                <h3>Ensalada cesar:</h3>
-                <p>Lechuga, crutones, pollo grillado y aderezo cesar</p>
-            </article>
+                <tr>
+                    <th>
+                        <p><em>Somos un restaurante familiar con más de 20 años. Nos apasiona la buena comida y la atención cálida.</em><br></br>
 
-         </section>
-         <hr>
+                        Nuestra historia comenzó en la cocina de nuestra abuela, donde los sabores auténticos y el amor por los detalles eran la base de cada plato. Hoy, honramos esa herencia sirviendo recetas caseras transmitidas de generación en generación, preparadas con ingredientes frescos y de temporada.<br></br>
 
-         <!-- sección nosotros -->
-         <aside id="nosotros">
-            <h2>Sobre nosotros:</h2>
-            <p>Somos un restaurante familiar con más de 20 años. Nos apasiona la buena comida y la atención cálida.</p>
-         </aside>
-         <hr>
+                        Aquí no encontrarás prisas. Te invitamos a sentarte en nuestra mesa, a desconectar y a disfrutar de esos sabores que te recuerdan a casa. Cada sopa, guiso y postre está hecho con el mismo cariño con el que lo harías tú.<br></br>
+
+                        Eres parte de nuestra familia. Nuestro mayor orgullo es verte salir con una sonrisa y el estómago lleno.<br></br>
+
+                        <strong>¡Te esperamos para compartir un pedacito de nuestro hogar contigo!</strong></p>
+                    </th>
+                </tr>
+            </table>
+        </aside>
+        <hr>
 
         <!-- sección reservas -->
         <section id="reserva">
-            <h2>Reserva tu Mesa:</h2>
-            <form>
-                <fieldset>
-                    <legend>Datos de la reserva:</legend><br>
+            <table border="1" width="100%">
+                <tr>
+                    <th align="left">
+                        <h2>Reserva tu Mesa:</h2>
+                    </th>
+                </tr>
 
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Luciano"><br><br>
+                <tr>
+                    <th align="left">
+                        <form>
+                            <fieldset>
+                                <legend>Datos de la reserva:</legend><br>
 
-                    <label for="email">Correo electronico:</label>
-                    <input type="text" id="email" name="email" required placeholder="Ej: Luciano@example.com"><br><br>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Ej: Luciano"><br><br>
 
-                    <label for="fecha">Fecha de la reserva:</label>
-                    <input type="date" id="fecha" name="fecha" required><br><br>
-                    
-                    <label for="hora">Hora de la reserva:</label>
-                    <input type="time" id="hora" name="hora" required><br><br>
+                                <label for="email">Correo electronico:</label>
+                                <input type="text" id="email" name="email" required placeholder="Ej: Luciano@example.com"><br><br>
 
-                    <label for="personas">Cantidad de personas:</label>
-                    <input type="number" id="personas" name="personas" required placeholder="Ej: 2" min="1" max="20"><br><br>
+                                <label for="fecha">Fecha de la reserva:</label>
+                                <input type="date" id="fecha" name="fecha" required><br><br>
+                                
+                                <label for="hora">Hora de la reserva:</label>
+                                <input type="time" id="hora" name="hora" required><br><br>
 
-                    <label for="comentario">Comentario adicional(Opcional):</label><br><br>
-                    <textarea name="comentario" id="comentario"
-                        placeholder="Ej: Preferencia de la ubicación de la mesa, sin gluten, etc."
-                        rows="4"
-                        cols="100"
-                    ></textarea><br>
+                                <label for="personas">Cantidad de personas:</label>
+                                <input type="number" id="personas" name="personas" required placeholder="Ej: 2" min="1" max="20"><br><br>
 
-                    <button type="submit">Reserva</button>
+                                <label for="comentario">Comentario adicional(Opcional):</label><br><br>
+                                <textarea name="comentario" id="comentario"
+                                    placeholder="Ej: Preferencia de la ubicación de la mesa, sin gluten, etc."
+                                    rows="4"
+                                    cols="100"
+                                ></textarea><br>
 
-                </fieldset>
-            </form>
+                                <button type="submit">Reserva</button>
+
+                            </fieldset>
+                        </form>
+                    </th>
+                </tr>
+            </table>
         </section>
+        <hr>
     </main>
 
     <footer>
-        <p>&copy; 2025 - La Buena Mesa - Todos los derechos reservados</p>
+        <table border="1" width="100%">
+            <tr>
+                <th>
+                    <p>&copy; 2025 - La Buena Mesa - Todos los derechos reservados</p>
+                </th>
+            </tr>
+        </table>
     </footer>
 
 </body>
